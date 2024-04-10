@@ -2,11 +2,8 @@ import Home from "../components/Home";
 import addToCart from "../services/actions/addToCart";
 import { connect } from "react-redux";
 
-
 const mapStateToProps = (state) => {
-  return {
-    itemsInCart:state.reducerAddToCart.cartItems
-  }
+  return {};
 };
 
 const mapDispatchToProps = (dispatch) => ({
@@ -15,6 +12,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
-
-
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
